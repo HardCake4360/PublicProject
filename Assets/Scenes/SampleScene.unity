@@ -679,6 +679,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3489ce9d3b9e2d742831f11c69b04948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 100
+  hp: 0
+  maxSp: 10
+  sp: 0
+  hpSlider: {fileID: 374624769}
+  spSlider: {fileID: 1290210352}
   movementOrientation: {fileID: 1269470727}
   characterMesh: {fileID: 1718275903}
   speed: 10
@@ -908,6 +914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400649400}
   - component: {fileID: 1400649399}
+  - component: {fileID: 1400649401}
   m_Layer: 5
   m_Name: UIDocument
   m_TagString: Untagged
@@ -949,6 +956,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1400649401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400649398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2f1a5684567d04a9ad7696d5260c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerScript: {fileID: 1269470726}
 --- !u!1 &1470724283
 GameObject:
   m_ObjectHideFlags: 0

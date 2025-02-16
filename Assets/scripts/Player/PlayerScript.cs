@@ -58,6 +58,7 @@ public class PlayerScript : playerAbility
 
         horizontalInput = 0.0f;
         verticalInput = 0.0f;
+        this.HpSum(100);
     }
 
     // Update is called once per frame
@@ -100,6 +101,14 @@ public class PlayerScript : playerAbility
         m_characterController.Move(velocity * Time.deltaTime/*Vector3.Lerp(lastFixedPosition, nextFixedPosition, interpolationAlpha) - transform.position*/);
         characterMesh.rotation = Quaternion.Slerp(lastFixedRotation, nextFixedRotation, interpolationAlpha);
 
+
+
+
+
+        //UI
+        hpSlider.value = hp / maxHp;
+        spSlider.value = sp / maxSp;
+        
     }
 
     private void FixedUpdate()

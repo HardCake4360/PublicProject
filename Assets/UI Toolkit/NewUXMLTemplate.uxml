@@ -1,10 +1,12 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <engine:VisualElement style="flex-grow: 1; align-items: flex-start; flex-direction: column; height: 357px;">
-        <engine:ProgressBar value="22" title="HP" style="width: 300px; height: 25px; flex-direction: column;" />
-        <engine:ProgressBar value="22" title="SP" style="width: 300px; height: 25px;" />
-    </engine:VisualElement>
-    <engine:VisualElement style="flex-grow: 1; flex-direction: row;">
-        <engine:Button text="HP+10" />
-        <engine:Button text="HP-10" style="flex-direction: row;" />
+    <engine:VisualElement style="flex-grow: 1;">
+        <engine:VisualElement style="flex-grow: 1; align-items: flex-start; flex-direction: column; height: 357px;">
+            <engine:ProgressBar value="22" title="HP" name="hpSlider" style="width: 300px; height: 25px; flex-direction: column;" />
+            <engine:ProgressBar value="22" title="SP" name="spSlider" style="width: 300px; height: 25px;" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <engine:Button text="HP+10" name="hpUp" />
+            <engine:Button text="HP-10" name="hpDown" style="flex-direction: row;" />
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>
